@@ -1,14 +1,14 @@
 
 function setup() {
   // put setup code here
-createCanvas(windowWidth),windowHeight);
+createCanvas(windowWidth,windowHeight);
 
 
 }
+
 function draw() {
-  //Put draw code here
   background(200,10,120);
-  fill(0,255,0);
+  fill(0,250,200);
   circle(100,100,70);
 
 
