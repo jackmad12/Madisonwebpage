@@ -1,7 +1,7 @@
-let xpos = 550;
-let ypos = 0;
-let xballspeed = 4;
-let yballspeed = 5;
+let xpos = 50;
+let ypos = 50;
+let xballspeed = 2;
+let yballspeed = 3;
 function setup() {
   // put setup code here
 createCanvas(windowWidth,windowHeight);
@@ -13,9 +13,31 @@ function draw() {
   fill(100,150,200);
   circle(xpos,ypos,150);
 
- if(mouseIsPressed & dist(xpos,ypos,mouseX,mouseY) < 100){
-xpos,ypos =random(10,100);
+xpos= xpos + xballspeed;
+ypos= ypos + yballspeed;
 
+  if(xpos > width - 50){
+xballspeed = -xballspeed;
+
+  }
+
+if(xpos < 50){
+  xballspeed = -xballspeed
+}
+
+if(ypos > height - 50){
+yballspeed = -yballspeed;
+
+}
+
+if(ypos < 50){
+  yballspeed = -yballspeed;
+}
+
+
+ if(mouseIsPressed & dist(mouseX,mouseY,xpos,ypos) < 50){
+xpos = random(0,width);
+ypos = random(0,height);
 
 
 
