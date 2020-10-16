@@ -16,8 +16,6 @@ function draw() {
   //Put draw code here
   background(130,10,130);
 
-
-
 for(let i = 0; i < xposList.length; i = i + 1){
 circle(xposList[i], yposList[i],50);
 
