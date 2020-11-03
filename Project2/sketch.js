@@ -64,9 +64,11 @@ image(img1,m,450,200,200);
 m = m + 10;
 
 // add two blended images of butterflies to create a more abstract feel to the art piece
-blend(img3,250,200,250,350,500,300,250,250,DIFFERENCE);
+blend(img1,250,200,250,350,500,300,250,250,DIFFERENCE);
 
-blend(img1,250,100,250,250,1000,300,250,250,SCREEN);
+blend(img3,250,100,250,250,1000,300,250,250,SCREEN);
+
+blend(img,200, 50,300,300,300,300,300,300,DODGE);
 
 
 }
