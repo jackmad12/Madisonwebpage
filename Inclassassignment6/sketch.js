@@ -21,7 +21,7 @@ background(200,10,120);
 function draw() {
   //Put draw code here
   for(let i=0;i< width;i=i+150){
-  
+    tint(random(0,255),random(0,255),random(0,255));
       image(partImage,i,0);
 
   }
