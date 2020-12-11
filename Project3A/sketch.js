@@ -15,7 +15,7 @@ let y4;
 let offset;
 
 function setup() {
-  // make the canvas full screen in order to fill the background with one pattern and overlap the other patterns on top
+  // make the canvas full screen in order to fill the background with the pattern if the page isnt refreshed
   createCanvas(windowWidth,windowHeight);
   background(118,94,135);// the background; apart from the pattern; is dark to give a more gloomy atmosphere
   noFill();
@@ -38,7 +38,7 @@ function draw() {
   //Put draw code here
 
 
-   // creates random shapes that change each time the page is refreshed
+   // creates random, web-like, curved shapes that continue to build up until the page is refreshed
   x1=noise(offset)*width;
   x2=noise(offset+10)*width;
   x3=noise(offset+20)*width;

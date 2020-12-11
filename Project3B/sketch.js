@@ -11,7 +11,7 @@ let yoffset2;
 
 function setup() {
   createCanvas(windowWidth,windowWidth);
-  background(47,94,162);
+  background(47,94,162);//the background will be a dark color in order to highlight the bright patterns that appear
   noStroke();
   xoffset=random(0,3);
   yoffset=random(0,2)
@@ -22,10 +22,10 @@ function setup() {
 }
 
 function draw() {
-
+// creates two sets of colorful patterns made up of squares and  circles. They appear fast on the screen as a way to surprise the viewer with splashes of color
 xpos=noise(xoffset)*width;
 ypos=noise(yoffset)*height;
-fill(26,203,41);
+fill(26,203,41);// The colors are also green and pink, almost like the colors of a watermelon to give off happy summertime vibes
 circle(xpos,ypos,100);
 
 
